@@ -24,9 +24,9 @@
 %
 % Yoel Shkolnisky 22/10/01
 
-function [res1,res2]=Radon(im);
+function [res1,res2]=Radon(im)
 
-[res1,res2] = optimizedPPFT(im);
+[res1,res2] = OptimizedPPFT(im);
 
 % Inverse FFT along columns
 res1 = icfftd(res1,1);
